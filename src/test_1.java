@@ -1,11 +1,13 @@
-import java.util.Scanner;
 public class test_1 {
-    public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter a degree in Fahrenheit: ");
-        double fahrenheit = input.nextDouble();
-        double celsius = (5.0 / 9) * (fahrenheit - 32);
-        System.out.println("Fahrenheit " + fahrenheit + " is " +
-                celsius + " in Celsius");
+    public static void main(String[] args) {
+        long totalMilliseconds = System.currentTimeMillis();
+        long totalSeconds = totalMilliseconds / 1000;
+        long currentSecond = totalSeconds % 60;
+        long totalMinutes = totalSeconds / 60;
+        long currentMinute = totalMinutes % 60;
+        long totalHours = totalMinutes / 60;
+        long currentHour = totalHours % 24;
+        System.out.println("Current time is " + currentHour + ":"
+            + currentMinute + ":" + currentSecond + " GMT");
     }
 }
