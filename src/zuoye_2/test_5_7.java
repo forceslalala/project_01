@@ -1,6 +1,6 @@
 package zuoye_2;
 
-public class zuoye_5_17 {
+public class test_5_7 {
     public static void main(String[] args) {
         double money = 10000;
         double sum = 0;
