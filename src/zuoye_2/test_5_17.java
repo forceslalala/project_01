@@ -9,9 +9,9 @@ public class test_5_17 {
         for (int k = 0; k < num; k++) {
             for (int i = -num; i <= num; i++) {
                 if (Math.abs(i) <= k) {
-                    System.out.print(Math.abs(i) + 1 + "  ");
+                    System.out.print(Math.abs(i) + 1 + "   ");
                 } else {
-                    System.out.print("   ");
+                    System.out.print("    ");
                 }
             }
             if (k != num - 1) {
