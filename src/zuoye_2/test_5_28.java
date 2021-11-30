@@ -20,7 +20,7 @@ public class test_5_28 {
                 case 9: System.out.print("September 1, ");break;
                 case 10: System.out.print("October 1, ");break;
                 case 11: System.out.print("November 1, ");break;
-                case 12: System.out.print("December 1, ");break;
+                case 12: System.out.print("December 1, ");
             }
             switch (day){
                 case 1: System.out.println(year + " is Monday");break;
@@ -29,7 +29,7 @@ public class test_5_28 {
                 case 4: System.out.println(year + " is Thursday");break;
                 case 5: System.out.println(year + " is Friday");break;
                 case 6: System.out.println(year + " is Saturday");break;
-                case 7: System.out.println(year + " is Sunday");break;
+                case 0: System.out.println(year + " is Sunday");break;
             }
             if(i==1 || i==3 || i==5 || i==7 || i==8 || i==10 || i==12){
                 day = (day + 31 % 7) % 7;
