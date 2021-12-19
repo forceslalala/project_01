@@ -18,8 +18,7 @@ public class test_11_8 {
         System.out.println("余额： " + account.getBalance());
         ArrayList<Transaction> list = account.getTransactions();
         System.out.printf("%-30s%-14s%-14s%-15s\n", "交易时间", "交易类型", "交易金额", "账户余额");
-        for (int i = 0; i < list.size(); i++) {
-            Transaction transaction = (Transaction) (list.get(i));
+        for (Transaction transaction : list) {
             System.out.printf("%-35s%-14s%-16s%-15s\n", transaction.getDate(), transaction.getType(),
                     transaction.getAmount(), transaction.getBalance());
         }
