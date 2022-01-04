@@ -14,14 +14,15 @@ import java.io.IOException;
 public class Test {
 
     public static void main(String[] args) throws IOException{
-
-
-		Book b1 = new Book("0001","aa",23,"kiki");
+        //1.
+        // 新建图书对象
+		/*Book b1 = new Book("0001","aa",23,"kiki");
 		Book b2 = new Book("0010","bb",17,"qiqi");
 		Book b3 = new Book("0100","cc",35,"kiki");
-		Book b4 = new Book("0011","dd",30,"kiki");
+		Book b4 = new Book("0011","dd",30,"kiki");*/
 
-		List<Book> books = new ArrayList<Book>();
+        // 链表存放
+		/*List<Book> books = new ArrayList<Book>();
 
 		books.add(b1);
 		books.add(b2);
@@ -37,14 +38,14 @@ public class Test {
 			System.out.print(book.getName() + "\t");
 			System.out.print(book.getPrice() + "\t");
 			System.out.println(book.getPublisher());
-		}
+		}*/
 
-		for (Book book : books) {
+		/*for (Book book : books) {
 			System.out.println(book.getName());
-		}
+		}*/
 
-
-		Map<String,Book> books = new HashMap<String,Book>();
+        // 映射存放
+		/*Map<String,Book> books = new HashMap<String,Book>();
 
 		books.put(b1.getNumber(), b1);
 		books.put(b2.getNumber(), b2);
@@ -61,9 +62,9 @@ public class Test {
 			System.out.print(((Book)entry.getValue()).getName() + "\t");
 			System.out.print(((Book)entry.getValue()).getPrice() + "\t");
 			System.out.println(((Book)entry.getValue()).getPublisher());
-		}
+		}*/
 
-
+        //2.
         System.out.println("请输入学号，姓名，年龄:");
         Scanner input = new Scanner(System.in);
         Map<Integer,Student> students = new TreeMap<Integer,Student>();
@@ -87,8 +88,8 @@ public class Test {
             pw.print(entry.getValue() + "\n");
 
             System.out.println(entry.getValue());
-            System.out.print(entry.getKey() + "\t");
-            System.out.println(entry.toString());
+            //System.out.print(entry.getKey() + "\t");
+            //System.out.println(entry.toString());
 
         }
 
